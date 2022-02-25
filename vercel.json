@@ -1,6 +1,6 @@
 {
     "version": 2,
-    "name": "programming-languages-api",
-    "builds": [{ "src": "server.js", "use": "@vercel/node" }],
-    "routes": [{ "src": "/(.*)", "dest": "/index.js" }]
+    "name": "zoom-bot-api",
+    "builds": [{ "src": "./server.js", "use": "@vercel/node" }],
+    "routes": [{ "src": "/(.*)", "dest": "/" }]
 }
