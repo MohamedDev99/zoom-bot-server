@@ -4,7 +4,7 @@
     "main": "server.js",
     "license": "MIT",
     "engines": {
-        "node": "16.x"
+        "node": "14.x"
     },
     "dependencies": {
         "aws-sdk": "^2.1080.0",
