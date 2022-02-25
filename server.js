@@ -18,7 +18,7 @@ const polly = new AWS.Polly({
     region: "us-east-1",
 });
 
-app.get("/", (req, res) => res.send("hello world"));
+app.get("/", (req, res) => res.status(200).send("hello vercel"));
 
 app.post("/speech", async (req, res) => {
     const { text, voiceId } = req.body;
@@ -45,3 +45,5 @@ const server = app.listen(process.env.PORT || 5500, () => {
     const { port } = server.address();
     console.log(`Server running on PORT ${port}`);
 });
+
+module.exports = app;
